@@ -1,0 +1,12 @@
+type Query {
+    blocks(
+        block_id: Int
+    ): Blocks @resolver(class: "MugAR\\CmsGraphQl\\Model\\Blocks") @doc(description: "The blocks query result")
+}
+
+type Blocks {
+    block_id: Int @doc(description: "The ID assigned to the Block")
+    identifier: String @doc(description: "The Block Identifier")
+    title: String @doc(description: "Block Title")
+    content: String @doc(description: "Block Content")
+}
