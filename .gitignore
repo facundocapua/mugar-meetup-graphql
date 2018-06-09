@@ -9,3 +9,5 @@ atlassian*
 /.idea
 /.gitattributes
 .DS_Store
+
+/vendor
